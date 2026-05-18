@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bear Todos</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Caveat:wght@400;600&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="flower flower--left" aria-hidden="true"></div>
+    <div class="flower flower--right" aria-hidden="true"></div>
+
+    <div class="card">
+      <h1 class="card__title">🐻 Bear Todos</h1>
+
+      <div class="add-row">
+        <input
+          id="todo-input"
+          class="add-row__input"
+          type="text"
+          placeholder="What needs doing?"
+          maxlength="200"
+        />
+        <button id="add-btn" class="add-row__btn">Add</button>
+      </div>
+
+      <div id="filter-bar" class="filter-bar">
+        <button class="filter-bar__btn filter-bar__btn--active" data-filter="All">All</button>
+        <button class="filter-bar__btn" data-filter="Active">Active</button>
+        <button class="filter-bar__btn" data-filter="Completed">Completed</button>
+      </div>
+
+      <ul id="todo-list" class="todo-list"></ul>
+    </div>
+  </body>
+</html>
